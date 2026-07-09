@@ -1,21 +1,4 @@
-"""
-Pair Trading Strategy Using Polynomial Regression
-Self Project (May '25 - June '25)
 
-- Market-neutral pairs strategy: model the relationship between two
-  cointegrated stocks with polynomial regression (rather than a plain
-  linear hedge ratio) to capture non-linear mean-reversion in the spread.
-- Statistical validation with the Augmented Dickey-Fuller (ADF) test and
-  the Engle-Granger two-step cointegration test before trading a pair.
-- Backtested end-to-end in Python using Backtrader / Cerebro on historical
-  daily equity data, reporting returns, Sharpe ratio, and drawdown.
-
-Usage:
-    python pair_trading_strategy.py --tickers KO PEP --start 2018-01-01 --end 2024-01-01
-
-Dependencies:
-    pip install yfinance backtrader statsmodels numpy pandas matplotlib --break-system-packages
-"""
 
 import argparse
 import warnings
