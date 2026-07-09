@@ -1,23 +1,4 @@
-"""
-GPT-2 Small From Scratch Implementation
-Self Project (May '25 - June '25)
 
-- Custom language model built with PyTorch: byte-pair encoding (via a
-  minimal from-scratch BPE tokenizer), causal self-attention, and
-  transformer decoder blocks -- following the GPT-2 "small" configuration
-  (12 layers, 12 heads, 768-dim embeddings, ~124M params).
-- Includes an accompanying walkthrough of the linear algebra and calculus
-  behind each component (see NOTES.md).
-
-Usage:
-    python gpt2_small.py --train data.txt --steps 2000   # train a tiny model
-    python gpt2_small.py --generate "Once upon a time"    # sample text
-
-This file is intentionally self-contained (tokenizer + model + training
-loop + generation) so it can run end-to-end on a laptop / single GPU for
-learning purposes. Swap in the real GPT-2 BPE merges/vocab for full
-compatibility with OpenAI's released checkpoints.
-"""
 
 import argparse
 import math
