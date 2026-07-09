@@ -1,17 +1,4 @@
-// Sudoku Solver Algorithm in C++
-// Self Project (Mar '24 - Apr '24)
-//
-// - Recursive backtracking algorithm to solve 9x9 Sudoku puzzles while
-//   ensuring valid number placement (row / column / 3x3 box constraints).
-// - Handles unsolvable cases by backtracking when no valid digit can be
-//   placed, and reports "No solution exists" instead of crashing/looping.
-//
-// Build:   g++ -std=c++17 -O2 -o sudoku_solver sudoku_solver.cpp
-// Run:     ./sudoku_solver               (uses the built-in sample puzzle)
-//          ./sudoku_solver puzzle.txt    (reads a puzzle from a file)
-//
-// Puzzle file format: 9 lines of 9 characters (digits 1-9, and '0' or '.'
-// for empty cells). Whitespace is ignored.
+
 
 #include <iostream>
 #include <fstream>
